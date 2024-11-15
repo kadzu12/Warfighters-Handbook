@@ -1,0 +1,378 @@
+﻿<Page x:Class="Warfighters.Views.CharacterInfo"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Warfighters.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="800"
+      Title="CharacterInfo" >
+    
+    <ScrollViewer>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.1*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="5*"/>
+            </Grid.ColumnDefinitions>
+            
+            <StackPanel Grid.Row="1" Orientation="Vertical" Grid.Column="1" Grid.ColumnSpan="2" Margin="10">
+                <StackPanel Background="#F2FFFFFF" Orientation="Horizontal">
+                    <Border BorderThickness="1" BorderBrush="Black" CornerRadius="5" Margin="5" Padding="5">
+                        <Image Source="{Binding Character.DisplayedImage}"/>
+                    </Border>
+                    <StackPanel Margin="20" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Left">
+                        <TextBlock Text="{Binding Character.NameCharacter}" FontSize="30" FontWeight="Bold"/>
+                        <StackPanel Margin="0,5,0,5" Orientation="Horizontal" >
+                            <TextBlock Text="Редкость: " FontSize="16" FontWeight="Medium"/>
+                            <TextBlock Text="{Binding Character.Rariry}" FontSize="16"/>
+                        </StackPanel>
+                        <StackPanel Margin="0,0,0,5" Orientation="Horizontal">
+                            <TextBlock Text="Глаз бога: " FontSize="16" FontWeight="Medium"/>
+                            <TextBlock Text="{Binding Character.EyeGod}" FontSize="16"/>
+                        </StackPanel>
+                        <StackPanel Margin="0,0,0,5" Orientation="Horizontal">
+                            <TextBlock Text="Оружие: " FontSize="16" FontWeight="Medium"/>
+                            <TextBlock Text="{Binding Character.TypeWeapon}" FontSize="16"/>
+                        </StackPanel>
+                        <StackPanel Margin="0,0,0,5" Orientation="Horizontal">
+                            <TextBlock Text="Регион: " FontSize="16" FontWeight="Medium"/>
+                            <TextBlock Text="{Binding Character.Region}" FontSize="16"/>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel Background="#F2FFFFFF" Margin="0,10,0,10" Height="100">
+                    <TextBlock Text="Рейтинг персонажа" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <StackPanel Orientation="Vertical" Margin="5">
+                            <TextBlock Text="Main DPS" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <Border CornerRadius="5" BorderBrush="Black" BorderThickness="1" Padding="0" Width="45" Height="45">
+                                <TextBlock FontSize="16" FontWeight="Medium" Text="{Binding Character.MainDps}" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center">
+                                    <TextBlock.Style>
+                                        <Style TargetType="TextBlock">
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding Character.MainDps}" Value="S+">
+                                                    <Setter Property="Foreground" Value="#FF7F7F"/>
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding Character.MainDps}" Value="S">
+                                                    <Setter Property="Foreground" Value="#FFBF7F"/>
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding Character.MainDps}" Value="A">
+                                                    <Setter Property="Foreground" Value="#FFFF7F"/>
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding Character.MainDps}" Value="B">
+                                                    <Setter Property="Foreground" Value="#BFFF7F"/>
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding Character.MainDps}" Value="C">
+                                                    <Setter Property="Foreground" Value="#8EE88E"/>
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding Character.MainDps}" Value="D">
+                                                    <Setter Property="Foreground" Value="#6BEBFB"/>
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding Character.Support}" Value="NULL">
+                                                    <Setter Property="Foreground" Value="#FFFFFF"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </TextBlock.Style>
+                                </TextBlock>
+                            </Border>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Vertical" Margin="5">
+                            <TextBlock Text="Sub DPS" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <Border CornerRadius="5" BorderBrush="Black" BorderThickness="1" Padding="0" Width="45" Height="45">
+                                <TextBlock FontSize="16" FontWeight="Medium" Text="{Binding Character.SubDps}" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center">
+                                    <TextBlock.Style>
+                                        <Style TargetType="TextBlock">
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding Character.SubDps}" Value="S+">
+                                                    <Setter Property="Foreground" Value="#FF7F7F"/>
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding Character.SubDps}" Value="S">
+                                                    <Setter Property="Foreground" Value="#FFBF7F"/>
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding Character.SubDps}" Value="A">
+                                                    <Setter Property="Foreground" Value="#FFFF7F"/>
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding Character.SubDps}" Value="B">
+                                                    <Setter Property="Foreground" Value="#BFFF7F"/>
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding Character.SubDps}" Value="C">
+                                                    <Setter Property="Foreground" Value="#8EE88E"/>
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding Character.SubDps}" Value="D">
+                                                    <Setter Property="Foreground" Value="#6BEBFB"/>
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding Character.Support}" Value="NULL">
+                                                    <Setter Property="Foreground" Value="#FFFFFF"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </TextBlock.Style>
+                                </TextBlock>
+                            </Border>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Vertical" Margin="5">
+                            <TextBlock Text="Support" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <Border CornerRadius="5" BorderBrush="Black" BorderThickness="1" Padding="0" Width="45" Height="45">
+                                <TextBlock FontSize="16" FontWeight="Medium" Text="{Binding Character.Support}" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center">
+                                    <TextBlock.Style>
+                                        <Style TargetType="TextBlock">
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding Character.Support}" Value="S+">
+                                                    <Setter Property="Foreground" Value="#FF7F7F"/>
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding Character.Support}" Value="S">
+                                                    <Setter Property="Foreground" Value="#FFBF7F"/>
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding Character.Support}" Value="A">
+                                                    <Setter Property="Foreground" Value="#FFFF7F"/>
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding Character.Support}" Value="B">
+                                                    <Setter Property="Foreground" Value="#BFFF7F"/>
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding Character.Support}" Value="C">
+                                                    <Setter Property="Foreground" Value="#8EE88E"/>
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding Character.Support}" Value="D">
+                                                    <Setter Property="Foreground" Value="#6BEBFB"/>
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding Character.Support}" Value="NULL">
+                                                    <Setter Property="Foreground" Value="#FFFFFF"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </TextBlock.Style>
+                                </TextBlock>
+                            </Border>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel Background="#F2FFFFFF" Margin="0,10,0,10">
+                    <StackPanel Orientation="Horizontal" Margin="10,10,0,0">
+                        <TextBlock Text="Лучшие оружия персонажа " FontSize="20" FontWeight="Bold"/>
+                        <TextBlock Text="{Binding Character.NameCharacter}" FontWeight="Bold" FontSize="20"/>
+                    </StackPanel>
+                    <ItemsControl ItemsSource="{Binding Weapons}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border BorderThickness="1" BorderBrush="Black" CornerRadius="5" Margin="5" Padding="5">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image Margin="10" Source="{Binding DisplayedImage}" Grid.Column="0"/>
+                                        <StackPanel Grid.Column="1">
+                                            <TextBlock Text="{Binding Name}" FontSize="18" FontWeight="Bold"/>
+                                            <StackPanel Orientation="Horizontal">
+                                                <TextBlock Text="Редкость: " FontSize="14" FontWeight="Medium"/>
+                                                <TextBlock Text="{Binding Rarity}" FontSize="14"/>
+                                            </StackPanel>
+                                            <StackPanel Orientation="Horizontal">
+                                                <TextBlock Text="Атака: " FontSize="14" FontWeight="Medium"/>
+                                                <TextBlock Text="{Binding BasicAttack}" FontSize="14"/>
+                                            </StackPanel>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock Text="Дополнительная характеристика: " FontSize="14" FontWeight="Medium"/>
+                                                <TextBlock Text="{Binding AdditionalStat}" TextWrapping="WrapWithOverflow" FontSize="14" HorizontalAlignment="Left" MaxWidth="300"/>
+                                            </StackPanel>
+                                            <TextBlock Text="Пассивный эффект:" FontSize="16" Margin="0,10,0,0" FontWeight="Medium"/>
+                                            <TextBlock Text="{Binding PassiveEffect}" TextWrapping="WrapWithOverflow" FontSize="14" HorizontalAlignment="Left"/>
+                                        </StackPanel>
+                                    </Grid>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </StackPanel>
+
+                <StackPanel Background="#F2FFFFFF" Margin="0, 10, 0, 10">
+                    <StackPanel Orientation="Horizontal" Margin="10,10,0,0">
+                        <TextBlock Text="Лучшие артефакты персонажа " FontWeight="Bold" FontSize="20"/>
+                        <TextBlock Text="{Binding Character.NameCharacter}" FontWeight="Bold" FontSize="20"/>
+                    </StackPanel>
+                    <ItemsControl ItemsSource="{Binding SetsArtifact}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border BorderThickness="1" BorderBrush="Black" CornerRadius="5" Margin="5" Padding="5">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image Margin="10" Source="{Binding DisplayedImage}" Grid.Column="0"/>
+                                        <StackPanel Grid.Column="1" HorizontalAlignment="Stretch">
+                                            <TextBlock Text="{Binding Name}" FontSize="18" FontWeight="Bold"/>
+                                            <StackPanel Orientation="Horizontal">
+                                                <TextBlock Text="Подземелье: " FontSize="14" FontWeight="Medium"/>
+                                                <TextBlock Text="{Binding Dungeon}" FontSize="14"/>
+                                            </StackPanel>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock Text="Бонус за 2 предмета: " FontSize="16" FontWeight="Medium"/>
+                                                <TextBlock Text="{Binding IncompleteStatBonus}" TextWrapping="WrapWithOverflow" FontSize="14" HorizontalAlignment="Left"/>
+                                            </StackPanel>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock Text="Бонус за 4 предмета:" FontSize="16" FontWeight="Medium"/>
+                                                <TextBlock Text="{Binding FullStatBonus}" TextWrapping="WrapWithOverflow" FontSize="14" HorizontalAlignment="Left"/>
+                                            </StackPanel>
+                                        </StackPanel>
+                                    </Grid>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </StackPanel>
+
+                <StackPanel Background="#F2FFFFFF" Margin="0,10,0,0">
+                    <StackPanel Orientation="Horizontal" Margin="10,10,0,0">
+                        <TextBlock Text="Таланты и навыки персонажа " FontSize="20" FontWeight="Bold"/>
+                        <TextBlock Text="{Binding Character.NameCharacter}" FontSize="20" FontWeight="Bold"/>
+                    </StackPanel>
+
+                    <ItemsControl ItemsSource="{Binding Talents}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border BorderThickness="1" BorderBrush="Black" CornerRadius="5" Margin="10" Padding="10">
+                                    <StackPanel>
+                                        <TextBlock Text="{Binding NameTalent}" FontSize="16" FontWeight="Medium"/>
+                                        <TextBlock Text="{Binding CategoryTalent}" FontSize="14" FontWeight="Medium"/>
+                                        <TextBlock Text="{Binding DescriptionTalent}" TextWrapping="Wrap" FontSize="14"/>
+                                    </StackPanel>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </StackPanel>
+
+                <StackPanel Background="#F2FFFFFF" Margin="0,10,0,10">
+                    <TextBlock Text="Рекомендации по возвышению" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Border BorderThickness="1" BorderBrush="Black" CornerRadius="5" Margin="5" Padding="5">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="В первую очередь: " FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" Width="155"/>
+                                <TextBlock Text="{Binding FirstTalent}" FontSize="14"/>
+                            </StackPanel>
+                        </Border>
+                        <Border BorderThickness="1" BorderBrush="Black" CornerRadius="5" Margin="5" Padding="5">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Во вторую очередь: " FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" Width="155"/>
+                                <TextBlock Text="{Binding SecondTalent}" FontSize="14"/>
+                            </StackPanel>
+                        </Border>
+                        <Border BorderThickness="1" BorderBrush="Black" CornerRadius="5" Margin="5" Padding="5">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="При необходимости: " FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" Width="155"/>
+                                <TextBlock Text="{Binding ThirdTalent}" FontSize="14"/>
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel Background="#F2FFFFFF" Margin="0,10,0,0">
+                    <StackPanel Orientation="Horizontal" Margin="10,10,0,0">
+                        <TextBlock Text="Созвездия персонажа " FontSize="20" FontWeight="Bold"/>
+                        <TextBlock Text="{Binding Character.NameCharacter}" FontSize="20" FontWeight="Bold"/>
+                    </StackPanel>
+
+                    <ItemsControl ItemsSource="{Binding Constellations}" Margin="10,0,0,0">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <UniformGrid Columns="2"/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border BorderThickness="1" BorderBrush="Black" CornerRadius="5" Margin="5" Padding="10">
+                                    <StackPanel>
+                                        <TextBlock Text="{Binding NameConstellation}" FontWeight="Medium" FontSize="18" Margin="0,5,0,5"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock Text="Уровень созвездия: "/>
+                                            <TextBlock Text="{Binding ConstellationLevel}" FontWeight="Medium"/>
+                                        </StackPanel>
+                                        <TextBlock Text="{Binding DescriptionConstellation}" TextWrapping="Wrap" FontSize="14" HorizontalAlignment="Left" MaxWidth="300"/>
+                                    </StackPanel>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </StackPanel>
+
+                <StackPanel Background="#F2FFFFFF" Margin="0,10,0,0">
+                    <StackPanel Orientation="Horizontal" Margin="10,10,0,0">
+                        <TextBlock Text="Рекоменднуемые характеристики артефактов" FontSize="20" FontWeight="Bold"/>
+                    </StackPanel>
+                    <Grid Margin="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Border Grid.Column="0" Grid.Row="0" BorderBrush="Black" BorderThickness="1" Padding="2">
+                            <Image Source="/Views/clock.png" Height="25" Width="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <Border Grid.Column="0" Grid.Row="1" BorderBrush="Black" BorderThickness="1" Padding="2">
+                            <Image Source="/Views/cup.png" Height="25" Width="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <Border Grid.Column="0" Grid.Row="2" BorderBrush="Black" BorderThickness="1" Padding="2">
+                            <Image Source="/Views/crown.png" Height="25" Width="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <Border Grid.Column="0" Grid.Row="3" BorderBrush="Black" BorderThickness="1" Padding="2">
+                            <TextBlock Text="Доп." HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Medium" FontSize="11"/>
+                        </Border>
+
+                        <Border Grid.Column="1" Grid.Row="0" BorderBrush="Black" BorderThickness="1" Padding="2">
+                            <ListView x:Name="lvClockStat" IsEnabled="False" ItemsSource="{Binding ClockStats}">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Stat.Name}" Foreground="Black"/>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </Border>
+                        <Border Grid.Column="1" Grid.Row="1" BorderBrush="Black" BorderThickness="1" Padding="2">
+                            <ListView x:Name="lvCupStat" IsEnabled="False" ItemsSource="{Binding CupStats}">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Stat.Name}" Foreground="Black"/>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </Border>
+                        <Border Grid.Column="1" Grid.Row="2" BorderBrush="Black" BorderThickness="1" Padding="2">
+                            <ListView x:Name="lvCrownStat" IsEnabled="False" ItemsSource="{Binding CrownStats}">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Stat.Name}" Foreground="Black"/>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </Border>
+                        <Border Grid.Column="1" Grid.Row="3" BorderBrush="Black" BorderThickness="1" Padding="2">
+                            <ListView x:Name="lvAdditionallyStat" IsEnabled="False" ItemsSource="{Binding AdditionalStats}">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Stat.Name}" Foreground="Black"/>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </Border>
+                    </Grid>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Page>

@@ -1,0 +1,75 @@
+﻿<Page x:Class="Warfighters.Views.WeaponInfo"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Warfighters.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="800"
+      Title="WeaponInfo">
+
+    <ScrollViewer>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.1*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="5*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Row="1" Orientation="Vertical" Grid.Column="1" Grid.ColumnSpan="2" Margin="10">
+                <StackPanel Background="#F2FFFFFF">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Оружие " FontWeight="Bold" Margin="0,10,0,10" FontSize="20"/>
+                        <TextBlock Text="{Binding Weapon.NameWeapon}" FontWeight="Bold" Margin="0,10,0,10" FontSize="20"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Border BorderThickness="1" BorderBrush="Black" CornerRadius="5" Margin="5" Padding="5">
+                            <Image Margin="10" Source="{Binding Weapon.DisplayedImage}"/>
+                        </Border>
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Редкость: " FontSize="14" FontWeight="Medium"/>
+                                <TextBlock Text="{Binding Weapon.RarityWeapon}" FontSize="14"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Тип: " FontSize="14" FontWeight="Medium"/>
+                                <TextBlock Text="{Binding Weapon.TypeWeapon}" FontSize="14"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Атака: " FontSize="14" FontWeight="Medium"/>
+                                <TextBlock Text="{Binding Weapon.BasicAttack}" FontSize="14"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock Text="Дополнительная характеристика: " FontSize="14" FontWeight="Medium"/>
+                                <TextBlock Text="{Binding Weapon.AdditionalStat}" TextWrapping="WrapWithOverflow" FontSize="14" HorizontalAlignment="Left" MaxWidth="300"/>
+                            </StackPanel>
+                            <TextBlock Text="Пассивный эффект:" FontSize="16" Margin="0,10,0,0" FontWeight="Medium"/>
+                            <TextBlock Text="{Binding Weapon.PassiveEffect}" TextWrapping="WrapWithOverflow" FontSize="14" HorizontalAlignment="Left" MaxWidth="300"/>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel Margin="0, 10, 0, 10" Background="#F2FFFFFF">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBlock Text="Кому лучше всего подойдет " FontWeight="Bold" Margin="0,10,0,10" FontSize="20"/>
+                        <TextBlock Text="{Binding Weapon.NameWeapon}" FontWeight="Bold" Margin="0,10,0,10" FontSize="20"/>
+                    </StackPanel>
+                    <ListView x:Name="itemsLV" ScrollViewer.HorizontalScrollBarVisibility="Disabled" HorizontalAlignment="Center" Margin="10" Visibility="Visible">
+                        <ListView.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel/>
+                            </ItemsPanelTemplate>
+                        </ListView.ItemsPanel>
+                    </ListView>
+                    <TextBlock x:Name="tbText" Text="На текущий момент данное оружие не подходит ни одному персонажу, но кто знает, возможно следующему новому персонажу оно подойдет лучше других. На всякий случай советуем приберечь его."
+                               Margin="10"
+                               TextWrapping="Wrap" Visibility="Collapsed"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Page>

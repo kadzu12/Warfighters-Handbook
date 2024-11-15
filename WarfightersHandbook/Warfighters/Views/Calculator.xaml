@@ -1,0 +1,94 @@
+﻿<Page x:Class="Warfighters.Pages.Calculator"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Warfighters.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="800"
+      Title="Calculator">
+    <Grid Background="#F2FFFFFF">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Сет артефактов: " Width="125" Margin="3" Height="15"/>
+                    <ComboBox x:Name="cbSet" Width="140" Margin="3" Style="{StaticResource ComboBoxCalc}"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Категория артефакта: " Width="125" Margin="3" Height="15"/>
+                    <ComboBox x:Name="cbPiece" Width="140" Margin="3" Style="{StaticResource ComboBoxCalc}" SelectionChanged="cbPiece_SelectionChanged"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Основная харак-ка: " Width="125" Margin="3" Height="15"/>
+                    <ComboBox x:Name="cbMainStat" Width="140" Margin="3" Style="{StaticResource ComboBoxCalc}"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Процент от силы атаки: " Width="140" Margin="3" Height="15"/>
+                    <TextBox x:Name="tbATKPercent" Style="{StaticResource statTBStyle}" Width="100" Margin="3" PreviewKeyDown="tbATKPercent_PreviewKeyDown"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Процент от здоровья: " Width="140" Margin="3" Height="15"/>
+                    <TextBox x:Name="tbHPPercent" Style="{StaticResource statTBStyle}" Width="100" Margin="3" PreviewKeyDown="tbHPPercent_PreviewKeyDown"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Процент от защиты: " Width="140" Margin="3" Height="15"/>
+                    <TextBox x:Name="tbDEFPercent" Style="{StaticResource statTBStyle}" Width="100" Margin="3" PreviewKeyDown="tbDEFPercent_PreviewKeyDown"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Восст. энергии %: " Width="140" Margin="3" Height="15"/>
+                    <TextBox x:Name="tbRecharge" Style="{StaticResource statTBStyle}" Width="100" Margin="3" PreviewKeyDown="tbRecharge_PreviewKeyDown"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Мастерство стихий: " Width="140" Margin="3" Height="15"/>
+                    <TextBox x:Name="tbEM" Style="{StaticResource statTBStyle}" Width="100" Margin="3" PreviewKeyDown="tbEM_PreviewKeyDown"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Крит. урон %: " Width="140" Margin="3" Height="15"/>
+                    <TextBox x:Name="tbCritDMG" Style="{StaticResource statTBStyle}" Width="100" Margin="3" PreviewKeyDown="tbCritDMG_PreviewKeyDown"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Шанс крит. попадания %: " Width="140" Margin="3" Height="15"/>
+                    <TextBox x:Name="tbCritRate" Style="{StaticResource statTBStyle}" Width="100" Margin="3" PreviewKeyDown="tbCritRate_PreviewKeyDown"/>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel>
+                <Button x:Name="bCheck" Content="Проверить" Margin="5" Command="{Binding CalculateWnd}"/>
+                <Button x:Name="bCansel" Content="Очистить" Margin="5" Command="{Binding CancelWnd}"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" Margin="5">
+            <TextBox x:Name="tbSearch" Width="150" HorizontalAlignment="Right" VerticalAlignment="Center" Text="{Binding Search, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="5"/>
+            <StackPanel Orientation="Vertical">
+                <TextBlock Text="Персонажи, которым подходит данный артефакт:" FontWeight="Bold" FontSize="14" HorizontalAlignment="Left" TextWrapping="Wrap"/>
+                <ListView x:Name="lvSuitableCharacters" ItemsSource="{Binding SuitableCharactersImages}" Background="#F2FFFFFF" ScrollViewer.HorizontalScrollBarVisibility="Disabled" HorizontalAlignment="Center">
+                    <ListView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel/>
+                        </ItemsPanelTemplate>
+                    </ListView.ItemsPanel>
+                </ListView>
+                <TextBlock x:Name="tbText" Text="Если вы не увидели интересующего персонажа, значит данный артефакт ему не подходит"
+                           Margin="10"
+                           TextWrapping="Wrap" Visibility="Collapsed"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>
