@@ -160,5 +160,12 @@ namespace TestProject
             Assert.IsNotNull(result);
             Assert.IsTrue(result.Count > 0);
         }
+
+        [TestMethod]
+        public void GetCharacterAdditionalInfo_ShouldReturnEmptyList()
+        {
+            List<CharacterAdditionalInfo> result = CharacterServices.GetCharacterAdditionalInfo();
+            Assert.IsTrue(result.Count == 0);
+        }
     }
 }

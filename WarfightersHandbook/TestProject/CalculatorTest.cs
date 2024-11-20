@@ -92,5 +92,43 @@ namespace TestProject
             Assert.IsNotNull(result);
             Assert.IsTrue(result.Count > 0);
         }
+
+        [TestMethod]
+        public void CalculateForTest_ShouldReturnEmptyListForInvalidInput()
+        {
+            string setArtifact = "invalid";
+            string piece = "Цветок жизни";
+            string mainStat = "HP";
+            string hp = "invalid";
+            string atk = string.Empty;
+            string def = string.Empty;
+            string em = "63";
+            string er = "12";
+            string critRate = string.Empty;
+            string critDmg = string.Empty;
+
+            List<Character> result = CalculatorServices.CalculateForTest(setArtifact, piece, mainStat, hp, atk, def, em, er, critRate, critDmg);
+
+            Assert.IsTrue(result.Count == 0);
+        }
+
+        [TestMethod]
+        public void CalculateForTest_ShouldReturnEmptyListForTooManyStats()
+        {
+            string setArtifact = "Церемония древней знати";
+            string piece = "Цветок жизни";
+            string mainStat = "HP";
+            string hp = "10";
+            string atk = "20";
+            string def = "30";
+            string em = "63";
+            string er = "12";
+            string critRate = "5";
+            string critDmg = "10";
+
+            List<Character> result = CalculatorServices.CalculateForTest(setArtifact, piece, mainStat, hp, atk, def, em, er, critRate, critDmg);
+
+            Assert.IsTrue(result.Count == 0);
+        }
     }
 }

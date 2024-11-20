@@ -62,7 +62,7 @@ namespace Warfighters.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Warfighters;V1.0.0.0;component/views/usercontrolweapons.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Warfighters;component/views/usercontrolweapons.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\UserControlWeapons.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

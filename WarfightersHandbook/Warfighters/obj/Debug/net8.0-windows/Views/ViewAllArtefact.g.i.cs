@@ -94,7 +94,7 @@ namespace Warfighters.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Warfighters;V1.0.0.0;component/views/viewallartefact.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Warfighters;component/views/viewallartefact.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\ViewAllArtefact.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

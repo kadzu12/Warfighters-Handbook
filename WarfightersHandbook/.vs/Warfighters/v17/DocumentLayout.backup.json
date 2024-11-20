@@ -1,7 +1,48 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\\u042F\\Downloads\\Telegram Desktop\\WarfightersHandbook\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\sprus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u043E\u043C\u043D\u0430\u0434\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\WarfightersHandbook\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D216DD6A-EFF4-4A94-9A40-7668F42A0749}|TestProject\\TestProject.csproj|c:\\users\\sprus\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u043E\u043C\u043D\u0430\u0434\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\warfightershandbook\\testproject\\calculatortest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D216DD6A-EFF4-4A94-9A40-7668F42A0749}|TestProject\\TestProject.csproj|solutionrelative:testproject\\calculatortest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D216DD6A-EFF4-4A94-9A40-7668F42A0749}|TestProject\\TestProject.csproj|c:\\users\\sprus\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u043E\u043C\u043D\u0430\u0434\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\warfightershandbook\\testproject\\charactertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D216DD6A-EFF4-4A94-9A40-7668F42A0749}|TestProject\\TestProject.csproj|solutionrelative:testproject\\charactertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12C32DC7-86DC-43EB-8252-C8483B9EB353}|Warfighters\\Warfighters.csproj|c:\\users\\sprus\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u043E\u043C\u043D\u0430\u0434\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\warfightershandbook\\warfighters\\services\\characterservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12C32DC7-86DC-43EB-8252-C8483B9EB353}|Warfighters\\Warfighters.csproj|solutionrelative:warfighters\\services\\characterservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12C32DC7-86DC-43EB-8252-C8483B9EB353}|Warfighters\\Warfighters.csproj|c:\\users\\sprus\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u043E\u043C\u043D\u0430\u0434\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\warfightershandbook\\warfighters\\models\\data\\hoyoversecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12C32DC7-86DC-43EB-8252-C8483B9EB353}|Warfighters\\Warfighters.csproj|solutionrelative:warfighters\\models\\data\\hoyoversecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12C32DC7-86DC-43EB-8252-C8483B9EB353}|Warfighters\\Warfighters.csproj|c:\\users\\sprus\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u043E\u043C\u043D\u0430\u0434\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\warfightershandbook\\warfighters\\models\\characteradditionalinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12C32DC7-86DC-43EB-8252-C8483B9EB353}|Warfighters\\Warfighters.csproj|solutionrelative:warfighters\\models\\characteradditionalinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12C32DC7-86DC-43EB-8252-C8483B9EB353}|Warfighters\\Warfighters.csproj|c:\\users\\sprus\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u043E\u043C\u043D\u0430\u0434\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\warfightershandbook\\warfighters\\migrations\\hoyoversecontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12C32DC7-86DC-43EB-8252-C8483B9EB353}|Warfighters\\Warfighters.csproj|solutionrelative:warfighters\\migrations\\hoyoversecontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12C32DC7-86DC-43EB-8252-C8483B9EB353}|Warfighters\\Warfighters.csproj|c:\\users\\sprus\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u043E\u043C\u043D\u0430\u0434\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\warfightershandbook\\warfighters\\migrations\\20241118165352_intial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12C32DC7-86DC-43EB-8252-C8483B9EB353}|Warfighters\\Warfighters.csproj|solutionrelative:warfighters\\migrations\\20241118165352_intial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D216DD6A-EFF4-4A94-9A40-7668F42A0749}|TestProject\\TestProject.csproj|c:\\users\\sprus\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u043E\u043C\u043D\u0430\u0434\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\warfightershandbook\\testproject\\artifacttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D216DD6A-EFF4-4A94-9A40-7668F42A0749}|TestProject\\TestProject.csproj|solutionrelative:testproject\\artifacttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12C32DC7-86DC-43EB-8252-C8483B9EB353}|Warfighters\\Warfighters.csproj|c:\\users\\sprus\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u043E\u043C\u043D\u0430\u0434\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\warfightershandbook\\warfighters\\services\\artifactservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12C32DC7-86DC-43EB-8252-C8483B9EB353}|Warfighters\\Warfighters.csproj|solutionrelative:warfighters\\services\\artifactservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12C32DC7-86DC-43EB-8252-C8483B9EB353}|Warfighters\\Warfighters.csproj|c:\\users\\sprus\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u043E\u043C\u043D\u0430\u0434\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\warfightershandbook\\warfighters\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{12C32DC7-86DC-43EB-8252-C8483B9EB353}|Warfighters\\Warfighters.csproj|solutionrelative:warfighters\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -9,11 +50,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 655,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
@@ -21,15 +62,144 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CharacterTest.cs",
+              "DocumentMoniker": "C:\\Users\\sprus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u043E\u043C\u043D\u0430\u0434\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\WarfightersHandbook\\TestProject\\CharacterTest.cs",
+              "RelativeDocumentMoniker": "TestProject\\CharacterTest.cs",
+              "ToolTip": "C:\\Users\\sprus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u043E\u043C\u043D\u0430\u0434\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\WarfightersHandbook\\TestProject\\CharacterTest.cs",
+              "RelativeToolTip": "TestProject\\CharacterTest.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAAA+wKsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T17:07:32.61Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HoyoverseContext.cs",
+              "DocumentMoniker": "C:\\Users\\sprus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u043E\u043C\u043D\u0430\u0434\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\WarfightersHandbook\\Warfighters\\Models\\Data\\HoyoverseContext.cs",
+              "RelativeDocumentMoniker": "Warfighters\\Models\\Data\\HoyoverseContext.cs",
+              "ToolTip": "C:\\Users\\sprus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u043E\u043C\u043D\u0430\u0434\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\WarfightersHandbook\\Warfighters\\Models\\Data\\HoyoverseContext.cs",
+              "RelativeToolTip": "Warfighters\\Models\\Data\\HoyoverseContext.cs",
+              "ViewState": "AgIAABwBAAAAAAAAAAAuwGsBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T17:04:52.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CharacterAdditionalInfo.cs",
+              "DocumentMoniker": "C:\\Users\\sprus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u043E\u043C\u043D\u0430\u0434\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\WarfightersHandbook\\Warfighters\\Models\\CharacterAdditionalInfo.cs",
+              "RelativeDocumentMoniker": "Warfighters\\Models\\CharacterAdditionalInfo.cs",
+              "ToolTip": "C:\\Users\\sprus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u043E\u043C\u043D\u0430\u0434\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\WarfightersHandbook\\Warfighters\\Models\\CharacterAdditionalInfo.cs",
+              "RelativeToolTip": "Warfighters\\Models\\CharacterAdditionalInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T17:04:20.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HoyoverseContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\sprus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u043E\u043C\u043D\u0430\u0434\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\WarfightersHandbook\\Warfighters\\Migrations\\HoyoverseContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Warfighters\\Migrations\\HoyoverseContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\sprus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u043E\u043C\u043D\u0430\u0434\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\WarfightersHandbook\\Warfighters\\Migrations\\HoyoverseContextModelSnapshot.cs",
+              "RelativeToolTip": "Warfighters\\Migrations\\HoyoverseContextModelSnapshot.cs",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAQwLkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T16:55:10.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CalculatorTest.cs",
+              "DocumentMoniker": "C:\\Users\\sprus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u043E\u043C\u043D\u0430\u0434\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\WarfightersHandbook\\TestProject\\CalculatorTest.cs",
+              "RelativeDocumentMoniker": "TestProject\\CalculatorTest.cs",
+              "ToolTip": "C:\\Users\\sprus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u043E\u043C\u043D\u0430\u0434\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\WarfightersHandbook\\TestProject\\CalculatorTest.cs",
+              "RelativeToolTip": "TestProject\\CalculatorTest.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAAAHkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T04:13:50.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CharacterServices.cs",
+              "DocumentMoniker": "C:\\Users\\sprus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u043E\u043C\u043D\u0430\u0434\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\WarfightersHandbook\\Warfighters\\Services\\CharacterServices.cs",
+              "RelativeDocumentMoniker": "Warfighters\\Services\\CharacterServices.cs",
+              "ToolTip": "C:\\Users\\sprus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u043E\u043C\u043D\u0430\u0434\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\WarfightersHandbook\\Warfighters\\Services\\CharacterServices.cs",
+              "RelativeToolTip": "Warfighters\\Services\\CharacterServices.cs",
+              "ViewState": "AgIAANkAAAAAAAAAAAAmwO0AAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T17:07:38.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20241118165352_Intial.cs",
+              "DocumentMoniker": "C:\\Users\\sprus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u043E\u043C\u043D\u0430\u0434\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\WarfightersHandbook\\Warfighters\\Migrations\\20241118165352_Intial.cs",
+              "RelativeDocumentMoniker": "Warfighters\\Migrations\\20241118165352_Intial.cs",
+              "ToolTip": "C:\\Users\\sprus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u043E\u043C\u043D\u0430\u0434\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\WarfightersHandbook\\Warfighters\\Migrations\\20241118165352_Intial.cs",
+              "RelativeToolTip": "Warfighters\\Migrations\\20241118165352_Intial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T16:53:52.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ArtifactServices.cs",
+              "DocumentMoniker": "C:\\Users\\sprus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u043E\u043C\u043D\u0430\u0434\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\WarfightersHandbook\\Warfighters\\Services\\ArtifactServices.cs",
+              "RelativeDocumentMoniker": "Warfighters\\Services\\ArtifactServices.cs",
+              "ToolTip": "C:\\Users\\sprus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u043E\u043C\u043D\u0430\u0434\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\WarfightersHandbook\\Warfighters\\Services\\ArtifactServices.cs",
+              "RelativeToolTip": "Warfighters\\Services\\ArtifactServices.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwAoAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T03:59:50.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ArtifactTest.cs",
+              "DocumentMoniker": "C:\\Users\\sprus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u043E\u043C\u043D\u0430\u0434\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\WarfightersHandbook\\TestProject\\ArtifactTest.cs",
+              "RelativeDocumentMoniker": "TestProject\\ArtifactTest.cs",
+              "ToolTip": "C:\\Users\\sprus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u043E\u043C\u043D\u0430\u0434\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\WarfightersHandbook\\TestProject\\ArtifactTest.cs",
+              "RelativeToolTip": "TestProject\\ArtifactTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T03:54:24.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\sprus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u043E\u043C\u043D\u0430\u0434\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\WarfightersHandbook\\Warfighters\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Warfighters\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\sprus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\\u0443\u0447\u0435\u0431\u0430\\\u043A\u043E\u043C\u043D\u0430\u0434\u043D\u044B\u0439 \u043F\u0440\u043E\u0435\u043A\u0442\\WarfightersHandbook\\Warfighters\\MainWindow.xaml",
+              "RelativeToolTip": "Warfighters\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-15T08:06:44.511Z"
             }
           ]
         },
@@ -44,14 +214,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{320fd13f-632f-4b16-9527-a1adfe555f6c}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

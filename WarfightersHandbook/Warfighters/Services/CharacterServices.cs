@@ -15,6 +15,7 @@ namespace Warfighters.Services
                 return result;
             }
         }
+
         //Получение талантов и навыков персонажа
         public static List<Talent> GetTalent()
         {
@@ -231,6 +232,15 @@ namespace Warfighters.Services
             {
                 var characters = context.Characters.Where(c => c.Support == "D").ToList();
                 return characters;
+            }
+        }
+
+        public static List<CharacterAdditionalInfo> GetCharacterAdditionalInfo()
+        {
+            using (HoyoverseContext db = new())
+            {
+                var result = db.CharacterAdditionalInfos.ToList();
+                return result;
             }
         }
     }

@@ -62,7 +62,7 @@ namespace Warfighters.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Warfighters;V1.0.0.0;component/views/usercontroleimage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Warfighters;component/views/usercontroleimage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\UserControleImage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

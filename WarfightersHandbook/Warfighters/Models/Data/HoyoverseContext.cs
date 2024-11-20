@@ -28,6 +28,7 @@ public partial class HoyoverseContext : DbContext
     public virtual DbSet<Talent> Talents { get; set; }
 
     public virtual DbSet<Weapon> Weapons { get; set; }
+    public DbSet<CharacterAdditionalInfo> CharacterAdditionalInfos { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -359,6 +360,15 @@ public partial class HoyoverseContext : DbContext
             entity.Property(e => e.TypeWeapon)
                 .HasMaxLength(40)
                 .HasColumnName("type_weapon");
+        });
+
+        modelBuilder.Entity<CharacterAdditionalInfo>(entity =>
+        {
+            entity.ToTable("character_additional_info");
+            entity.HasKey(e => e.Id);
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.IdCharacter).HasColumnName("id_character");
+            entity.Property(e => e.History).HasColumnName("history");
         });
         OnModelCreatingPartial(modelBuilder);
     }
